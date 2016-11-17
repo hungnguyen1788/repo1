@@ -7,20 +7,6 @@
 	id="WebApp_ID"
 	version="3.1">
 	<display-name>Archetype Created Web Application</display-name>
-	<!-- nên sử dụng dtd này vì nó hỗ trợ thẻ jsp-config và nó linh hoạt (không 
-		phụ thuộc vào trật tự thẻ) như dtd cũ (dtd tạo từ maven) -->
-
-	<servlet>
-		<servlet-name>LoginServlet</servlet-name>
-		<display-name>Login</display-name>
-		<description></description>
-		<servlet-class>com.maka.test.zap.controller.LoginServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>LoginServlet</servlet-name>
-		<url-pattern>/Login</url-pattern>
-	</servlet-mapping>
 
 	<jsp-config>
 
@@ -78,6 +64,6 @@
     </session-config>	
 	
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>
